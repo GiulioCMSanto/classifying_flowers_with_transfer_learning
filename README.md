@@ -28,28 +28,28 @@ The data contains a 102 category dataset regarding flower categories commonly oc
 - **Training Data**
 In order to train the model, one should give the input path for the images as well as optional arguments, such as the pre-trained model to be used (vgg11, vgg13 or vgg16), whether or not to use a GPU, the desired learning rate and also the size of the hidden layers.
 
-python train.py './flowers'
+ - python train.py './flowers'
 
-python train.py './flowers' --save_dir './'
+ - python train.py './flowers' --save_dir './'
 
-python train.py './flowers' --arch 'vgg11'
+ - python train.py './flowers' --arch 'vgg11'
 
-python train.py './flowers' -l 0.005 -e 2 -a 'vgg13'
+ - python train.py './flowers' -l 0.005 -e 2 -a 'vgg13'
 
-python train.py './flowers' -l 0.005 -e 2 -a 'vgg16' --gpu
+ - python train.py './flowers' -l 0.005 -e 2 -a 'vgg16' --gpu
 
-python train.py './flowers' --learning_rate 0.01 --hidden_units 2048 1024 --epochs 20 --gpu
+ - python train.py './flowers' --learning_rate 0.01 --hidden_units 2048 1024 --epochs 20 --gpu
 
 - **Predicting Flowers**
 In order to make predictions, one should give the input path for the image to be predicted and the path to the trained model (the checkpoint). Moreover, a .json file with the corresponding name of the flowers for each class (category) can be passed as an argument.
 
-python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth'
+ - python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth'
 
-python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth' --category_names cat_to_name.json
+ - python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth' --category_names cat_to_name.json
 
-python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth' --category_names cat_to_name.json --top_k 3
+ - python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth' --category_names cat_to_name.json --top_k 3
 
-python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth' --category_names cat_to_name.json --top_k 5 --gpu
+ - python predict.py './flowers/test/15/image_06351.jpg' 'checkpoint.pth' --category_names cat_to_name.json --top_k 5 --gpu
 
 ## Used Libraries
 - json
