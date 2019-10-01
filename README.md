@@ -6,7 +6,7 @@ This project is part of the Data Scientist Nanodegree Program and consists of tr
 The motivation of this project is to used the concepts of Deep Learnd and Transfer Learning, creating an application with real data.  Moreover, this project aims to allow one to be familiar with the PyTorch open source library for computer vision and NLP.
 
 ## Documentation
-Please, find a post on this project on [Medium]().
+Please, find a post on this project on [Medium](https://towardsdatascience.com/classifying-flowers-with-transfer-learning-5e17925a1f59).
 
 ## The Dataset
 The data being used in this project was extracted from the Visual Geometric Group from the University of Oxford and can be accessed in here.
